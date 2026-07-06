@@ -2,6 +2,7 @@ import React from "react";
 import { Phone, ExternalLink } from "lucide-react";
 
 const LOGO = "https://www.bestattungen-gockel.de/images/logo.png";
+const BG_IMG = "https://media.base44.com/images/public/6a4c0d376a0db0e3894ae785/3b9bcceb2_generated_749d867d.png";
 
 const SEARCH_TERMS = [
   "Bestatter Geseke",
@@ -42,8 +43,16 @@ export default function GesekeLanding() {
       </header>
 
       {/* Main */}
-      <main className="flex-1 flex items-center">
-        <div className="max-w-3xl mx-auto px-5 py-16 sm:py-24 text-center w-full">
+      <main className="flex-1 flex items-center relative">
+        <div className="absolute inset-0">
+          <img
+            src={BG_IMG}
+            alt="Ruhige Landschaft bei Geseke im Morgenlicht"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-[#F4F1EA]/85 backdrop-blur-[2px]" />
+        </div>
+        <div className="relative max-w-3xl mx-auto px-5 py-16 sm:py-24 text-center w-full">
           <p className="text-[#7ea82a] font-medium tracking-wide uppercase text-xs sm:text-sm mb-4">
             Bestattungen in Geseke &amp; Umgebung
           </p>
