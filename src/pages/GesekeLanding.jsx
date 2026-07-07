@@ -1,6 +1,7 @@
 import React from "react";
 import { Phone, ExternalLink } from "lucide-react";
 
+const LOGO = "https://media.base44.com/images/public/6a4c0d376a0db0e3894ae785/e141cafe4_Logo_cmyk.png";
 const BG_IMG = "https://media.base44.com/images/public/6a4c0d376a0db0e3894ae785/3b9bcceb2_generated_749d867d.png";
 
 const SEARCH_TERMS = [
@@ -36,11 +37,14 @@ export default function GesekeLanding() {
             rel="noopener noreferrer"
             className="flex items-center gap-2.5"
           >
-            <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#7ea82a]">
-              <span className="w-3.5 h-3.5 rounded-full bg-white/90" />
-            </span>
+            <img
+              src={LOGO}
+              alt="Logo Bestattungen Gockel – bestatter-geseke.de"
+              className="h-8 w-auto object-contain"
+              style={{ mixBlendMode: "screen" }}
+            />
             <span className="font-serif text-base text-[#2C3E50] tracking-tight">
-              bestatter-geseke.de
+              www.bestatter-geseke.de
             </span>
           </a>
           <a href="tel:029426322" className="flex items-center gap-1.5 text-sm font-medium text-[#2C3E50]">
@@ -100,7 +104,8 @@ export default function GesekeLanding() {
           </div>
 
           <div className="mt-12 text-sm text-[#888]">
-            <p>Bestattungen Gockel · Marktstraße 14 · 59590 Geseke</p>
+            <p className="text-[#2C3E50] font-medium">www.bestatter-geseke.de</p>
+            <p className="mt-2">Bestattungen Gockel · Marktstraße 14 · 59590 Geseke</p>
             <p className="mt-1">
               Tag &amp; Nacht erreichbar ·{" "}
               <a href="mailto:info@bestattungen-gockel.de" className="hover:text-[#7ea82a]">
