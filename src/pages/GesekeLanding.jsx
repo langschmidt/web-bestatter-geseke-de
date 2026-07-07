@@ -1,7 +1,6 @@
 import React from "react";
 import { Phone, ExternalLink } from "lucide-react";
 
-const LOGO = "https://www.bestattungen-gockel.de/images/logo.png";
 const BG_IMG = "https://media.base44.com/images/public/6a4c0d376a0db0e3894ae785/3b9bcceb2_generated_749d867d.png";
 
 const SEARCH_TERMS = [
@@ -31,11 +30,19 @@ export default function GesekeLanding() {
       {/* Header */}
       <header className="border-b border-stone-200/60 bg-white/80 backdrop-blur-sm">
         <div className="max-w-4xl mx-auto px-5 h-16 flex items-center justify-between">
-          <img
-            src={LOGO}
-            alt="Bestattungen Gockel – Bestatter in Geseke"
-            className="h-9 w-auto"
-          />
+          <a
+            href="https://www.bestattungen-gockel.de/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2.5"
+          >
+            <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#7ea82a]">
+              <span className="w-3.5 h-3.5 rounded-full bg-white/90" />
+            </span>
+            <span className="font-serif text-base text-[#2C3E50] tracking-tight">
+              bestatter-geseke.de
+            </span>
+          </a>
           <a href="tel:029426322" className="flex items-center gap-1.5 text-sm font-medium text-[#2C3E50]">
             <Phone className="w-4 h-4 text-[#7ea82a]" /> 02942 6322
           </a>
