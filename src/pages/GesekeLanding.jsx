@@ -28,31 +28,6 @@ const SEARCH_TERMS = [
 export default function GesekeLanding() {
   return (
     <div className="min-h-screen bg-[#F4F1EA] font-body flex flex-col">
-      {/* Header */}
-      <header className="border-b border-stone-200/60 bg-white/80 backdrop-blur-sm">
-        <div className="max-w-4xl mx-auto px-5 h-16 flex items-center justify-between">
-          <a
-            href="https://www.bestattungen-gockel.de/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2.5"
-          >
-            <img
-              src={LOGO}
-              alt="Logo Bestattungen Gockel – bestatter-geseke.de"
-              className="h-8 w-auto object-contain"
-              style={{ mixBlendMode: "screen" }}
-            />
-            <span className="font-serif text-base text-[#2C3E50] tracking-tight">
-              www.bestatter-geseke.de
-            </span>
-          </a>
-          <a href="tel:029426322" className="flex items-center gap-1.5 text-sm font-medium text-[#2C3E50]">
-            <Phone className="w-4 h-4 text-[#7ea82a]" /> 02942 6322
-          </a>
-        </div>
-      </header>
-
       {/* Main */}
       <main className="flex-1 flex items-center relative">
         <div className="absolute inset-0">
@@ -104,7 +79,20 @@ export default function GesekeLanding() {
           </div>
 
           <div className="mt-12 text-sm text-[#888]">
-            <p className="text-[#2C3E50] font-medium">www.bestatter-geseke.de</p>
+            <a
+              href="https://www.bestattungen-gockel.de/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block"
+            >
+              <img
+                src={LOGO}
+                alt="Logo Bestattungen Gockel – www.bestatter-geseke.de"
+                className="h-10 w-auto object-contain mx-auto"
+                style={{ mixBlendMode: "screen" }}
+              />
+            </a>
+            <p className="text-[#2C3E50] font-medium mt-3">www.bestatter-geseke.de</p>
             <p className="mt-2">Bestattungen Gockel · Marktstraße 14 · 59590 Geseke</p>
             <p className="mt-1">
               Tag &amp; Nacht erreichbar ·{" "}
