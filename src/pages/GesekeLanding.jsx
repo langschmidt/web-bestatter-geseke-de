@@ -89,7 +89,6 @@ export default function GesekeLanding() {
                 src={LOGO}
                 alt="Logo Bestattungen Gockel – www.bestatter-geseke.de"
                 className="h-10 w-auto object-contain mx-auto"
-                style={{ mixBlendMode: "screen" }}
               />
             </a>
             <p className="text-[#2C3E50] font-medium mt-3">www.bestatter-geseke.de</p>
