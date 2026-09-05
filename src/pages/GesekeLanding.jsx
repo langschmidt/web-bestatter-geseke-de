@@ -48,7 +48,13 @@ export default function GesekeLanding() {
           </h1>
           <p className="mt-5 text-[#555] text-lg leading-relaxed max-w-xl mx-auto">
             Bestattungen Gockel begleitet Angehörige in Geseke würdevoll und persönlich –
+            bei Bestattung, Beerdigung, Trauerfeier, Formalitäten und Vorsorge.
             Tag &amp; Nacht erreichbar.
+          </p>
+          <p className="mt-3 text-sm text-[#777] leading-relaxed max-w-xl mx-auto">
+            Als ortsansässiges Bestattungshaus sind wir für Angehörige in Geseke und den
+            Ortsteilen Störmede, Ehringhausen, Langeneicke, Mönninghausen, Eringerfeld,
+            Bönninghausen und Ermsinghausen da.
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
