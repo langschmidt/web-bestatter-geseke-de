@@ -28,7 +28,6 @@ export default function GesekeLanding() {
           <p className="mt-5 text-[#555] text-lg leading-relaxed max-w-xl mx-auto">
             Bestattungen Gockel begleitet Angehörige in Geseke würdevoll und persönlich –
             bei Bestattung, Beerdigung, Trauerfeier, Formalitäten und Vorsorge.
-            Tag &amp; Nacht erreichbar.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
             <a
