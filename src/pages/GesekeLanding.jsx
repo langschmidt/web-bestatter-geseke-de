@@ -1,5 +1,6 @@
 import React from "react";
 import { Phone, ExternalLink } from "lucide-react";
+import ReviewsSection from "@/components/ReviewsSection";
 
 const LOGO = "https://media.base44.com/images/public/6a4c0d376a0db0e3894ae785/e141cafe4_Logo_cmyk.png";
 const BG_IMG = "https://media.base44.com/images/public/6a4c0d376a0db0e3894ae785/3b9bcceb2_generated_749d867d.png";
@@ -66,6 +67,8 @@ export default function GesekeLanding() {
               <Phone className="w-4 h-4" /> 02942 6322 anrufen
             </a>
           </div>
+
+          <ReviewsSection />
 
           {/* Search terms – dezent */}
           <div className="mt-14">
