@@ -5,27 +5,6 @@ import ReviewsSection from "@/components/ReviewsSection";
 const LOGO = "https://media.base44.com/images/public/6a4c0d376a0db0e3894ae785/e141cafe4_Logo_cmyk.png";
 const BG_IMG = "https://media.base44.com/images/public/6a4c0d376a0db0e3894ae785/3b9bcceb2_generated_749d867d.png";
 
-const SEARCH_TERMS = [
-  "Bestatter Geseke",
-  "Bestattung Geseke",
-  "Beerdigung Geseke",
-  "Bestattungen Geseke",
-  "Bestattungshaus Geseke",
-  "Bestatter in der Nähe Geseke",
-  "Bestattungsvorsorge Geseke",
-  "Trauerfall Geseke",
-  "Erdbestattung Geseke",
-  "Feuerbestattung Geseke",
-  "Trauerfeier Geseke",
-  "Bestatter Störmede",
-  "Bestatter Ehringhausen",
-  "Bestatter Langeneicke",
-  "Bestatter Mönninghausen",
-  "Bestatter Eringerfeld",
-  "Bestatter Bönninghausen",
-  "Bestatter Ermsinghausen",
-];
-
 export default function GesekeLanding() {
   return (
     <div className="min-h-screen bg-[#F4F1EA] font-body flex flex-col">
@@ -51,12 +30,6 @@ export default function GesekeLanding() {
             bei Bestattung, Beerdigung, Trauerfeier, Formalitäten und Vorsorge.
             Tag &amp; Nacht erreichbar.
           </p>
-          <p className="mt-3 text-sm text-[#777] leading-relaxed max-w-xl mx-auto">
-            Als ortsansässiges Bestattungshaus sind wir für Angehörige in Geseke und den
-            Ortsteilen Störmede, Ehringhausen, Langeneicke, Mönninghausen, Eringerfeld,
-            Bönninghausen und Ermsinghausen da.
-          </p>
-
           <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
             <a
               href="https://www.bestattungen-gockel.de/"
@@ -76,16 +49,20 @@ export default function GesekeLanding() {
 
           <ReviewsSection />
 
-          {/* Search terms – dezent */}
-          <div className="mt-14">
-            <div className="flex flex-wrap justify-center gap-x-3 gap-y-1.5 max-w-2xl mx-auto">
-              {SEARCH_TERMS.map((term) => (
-                <span key={term} className="text-xs text-stone-400">
-                  {term}
-                </span>
-              ))}
-            </div>
-          </div>
+          <p className="mt-14 text-sm text-[#666] leading-relaxed max-w-2xl mx-auto">
+            Als <strong className="font-medium text-[#2C3E50]">Bestattungshaus in Geseke</strong> stehen
+            wir Angehörigen im <strong className="font-medium text-[#2C3E50]">Trauerfall</strong> zur
+            Seite – ob <strong className="font-medium text-[#2C3E50]">Erdbestattung</strong>,{" "}
+            <strong className="font-medium text-[#2C3E50]">Feuerbestattung</strong> oder individuelle{" "}
+            <strong className="font-medium text-[#2C3E50]">Trauerfeier</strong>. Von der{" "}
+            <strong className="font-medium text-[#2C3E50]">Bestattungsvorsorge</strong> bis zur{" "}
+            <strong className="font-medium text-[#2C3E50]">Beerdigung</strong> begleiten wir Sie
+            persönlich und würdevoll. Wer einen{" "}
+            <strong className="font-medium text-[#2C3E50]">Bestatter in der Nähe von Geseke</strong>{" "}
+            sucht, findet bei Bestattungen Gockel einen verlässlichen Partner – für Familien in
+            Geseke sowie in Störmede, Ehringhausen, Langeneicke, Mönninghausen, Eringerfeld,
+            Bönninghausen und Ermsinghausen.
+          </p>
 
           <div className="mt-12 text-sm text-[#888]">
             <a
